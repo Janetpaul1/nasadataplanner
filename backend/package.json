@@ -6,7 +6,7 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "test": "jest",
-    "build": "rimraf dist && mkdirp dist && copyfiles -u 1 src/**/* dist"
+    "build": "npm install --production=false && rimraf dist && mkdirp dist && copyfiles -u 1 src/**/* dist"
   },
   "dependencies": {
     "axios": "^1.7.2",
